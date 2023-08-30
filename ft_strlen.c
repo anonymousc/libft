@@ -1,5 +1,4 @@
 #include "libft.h"
-#include <string.h>
 
 size_t ft_strlen(const char *s)
 {
@@ -12,9 +11,8 @@ size_t ft_strlen(const char *s)
     }
     return (i);
 }
-
+/*
 #include <stdio.h>
-#include <unistd.h>
 
 int main(int ac,char **av)
 {
@@ -26,3 +24,4 @@ int main(int ac,char **av)
     printf("%d\n",ft_strlen(av[1]));
     printf("%d\n",strlen(av[1]));
 }
+*/
