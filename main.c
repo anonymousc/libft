@@ -2,17 +2,7 @@
 #include <ctype.h>
 #include <stdio.h>
 
-/*int main()
-{
-    int i = 65;
-    int b = 65;
-    //printf("%d\n",isalpha(b));
-    int a = ft_isalpha(b);
-    printf("%d",a);
-    write(1,"\n",1);
-    write(1,&a,1);
-}
-*/
+// test for ctype functions
 /*
 int main (){
     char str[] = "";
@@ -30,8 +20,7 @@ int main (){
     }
     printf("alpahbets are : %d\n numbers are : %d\n",alpha,num);
 }
-*/
-/*
+
 int main()
 {
     int i = 65;
@@ -41,5 +30,42 @@ int main()
     printf("%d",a);
     write(1,"\n",1);
     write(1,&a,1);
+}
+*/
+// test for strcpy
+/*
+int main()
+{
+    char src[] = "adam";
+    char dest[3];
+    char src1[] = "adam";
+    char dest2[3];
+    ft_strcpy(dest, src);
+    strcpy(dest2,src1);
+    printf("%s\n",dest); 
+    printf("%s",dest2);  
+}
+*/
+/*
+int main()
+{
+    char a[] = "00";
+    char y[] = "04";
+    char b[] = "00";
+    char d[] = "05";
+    int z = ft_strcmp(a,y);
+    int s = strcmp(b,d);
+    printf("%d\n",z);
+    printf("%d",s);
+}
+*/
+//test for strcat
+/*
+int main()
+{
+    char dest[] = "yasin ";
+    char src[] = "adam";
+    ft_strcat(dest,src);
+    printf("%s",dest);
 }
 */

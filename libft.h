@@ -5,6 +5,10 @@
 #include <string.h>
 #include <unistd.h>
 
+char    *ft_strcpy(char *restrict dest, const char *restrict src);
+char    *ft_strcat(char *restrict dest, const char *restrict src);
+
+int ft_strcmp(const char *s1, const char *s2);
 int ft_isalpha(int c);
 int ft_tolower(int c);
 int ft_toupper(int c);
