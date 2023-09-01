@@ -7,7 +7,7 @@ char *ft_strcat(char *restrict dest, const char *restrict src)
 
     j = 0;
     i = 0;
-    while (dest[j])
+    while (dest[j] != '\0')
     {
         j++;
     }
