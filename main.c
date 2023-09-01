@@ -71,7 +71,6 @@ int main()
 */
 // test for strlen
 /*
-#include <stdio.h>
 
 int main(int ac,char **av)
 {
@@ -82,5 +81,26 @@ int main(int ac,char **av)
     }
     printf("%d\n",ft_strlen(av[1]));
     printf("%d\n",strlen(av[1]));
+}
+*/
+/*
+int main()
+{
+    char z[] = "adam";
+    char l[] = "d";
+    char *adam = ft_strstr(z,l);
+    printf("%s", adam);
+}
+*/
+// test for strlen
+/*
+int main()
+{
+    char* a = "adam";
+    char* b = "adam";
+   a = (char *)malloc(sizeof(char));
+   b = (char *)malloc(sizeof(char));
+    printf("%d\n",ft_strlen(a));
+    printf("%d\n",strlen(b));
 }
 */

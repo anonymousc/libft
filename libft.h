@@ -7,8 +7,10 @@
 
 char    *ft_strcpy(char *restrict dest, const char *restrict src);
 char    *ft_strcat(char *restrict dest, const char *restrict src);
+char    *ft_strstr(const char *haystack, const char *needle);
 
 int ft_strcmp(const char *s1, const char *s2);
+size_t ft_strlen(const char *s);
 int ft_isalpha(int c);
 int ft_tolower(int c);
 int ft_toupper(int c);
