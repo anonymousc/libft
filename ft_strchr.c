@@ -1,20 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/31 10:08:56 by aessadik          #+#    #+#             */
-/*   Updated: 2023/10/31 13:43:43 by aessadik         ###   ########.fr       */
+/*   Created: 2023/10/31 10:25:32 by aessadik          #+#    #+#             */
+/*   Updated: 2023/11/04 18:09:49 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isalpha(int c)
+char    *ft_strchr(const char *s, int c)
 {
-    if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-        return (c);
-    return (0);
+    if(!((s) && c))
+        return (0);
+    char *str;
+
+    str = (char *)s;
+    while (*str && *str != ft_isascii(c))
+        str++;
+    return (str);
 }

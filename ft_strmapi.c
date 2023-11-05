@@ -1,20 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/31 10:08:56 by aessadik          #+#    #+#             */
-/*   Updated: 2023/10/31 13:43:43 by aessadik         ###   ########.fr       */
+/*   Created: 2023/10/31 16:35:05 by aessadik          #+#    #+#             */
+/*   Updated: 2023/10/31 16:35:28 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isalpha(int c)
-{
-    if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-        return (c);
-    return (0);
-}
+char *ft_strmapi(char const *s, char (*f)(unsigned int, char));

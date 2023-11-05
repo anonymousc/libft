@@ -1,7 +1,9 @@
 #include "libft.h"
 #include <ctype.h>
 #include <stdio.h>
-
+#include <string.h>
+ 
+ 
 // test for ctype functions
 /*
 int main (){
@@ -20,7 +22,8 @@ int main (){
     }
     printf("alpahbets are : %d\n numbers are : %d\n",alpha,num);
 }
-
+*/
+/*
 int main()
 {
     int i = 65;
@@ -32,7 +35,7 @@ int main()
     write(1,&a,1);
 }
 */
-// test for strcpy
+// test for strlcpy
 /*
 int main()
 {
@@ -70,8 +73,8 @@ int main()
 }
 */
 // test for strlen
-/*
 
+/*
 int main(int ac,char **av)
 {
     int i = 0;
@@ -98,9 +101,62 @@ int main()
 {
     char* a = "adam";
     char* b = "adam";
-   a = (char *)malloc(sizeof(char));
-   b = (char *)malloc(sizeof(char));
-    printf("%d\n",ft_strlen(a));
-    printf("%d\n",strlen(b));
+   //a = (char *)malloc(sizeof(char));
+   //b = (char *)malloc(sizeof(char));
+    printf("%lu\n",ft_strlen(a));
+    printf("%lu\n",strlen(b));
+}
+*/
+/*
+int main()
+{
+    char *a = " \r -1*12";
+    char *b = " \r -1*12";
+    int c = ft_atoi(a);
+    int s = atoi(b);
+    printf("%d\n",c);
+    printf("%d\n",s);
+}
+*/
+/*
+int main () {
+   const char str[] = "https://www.tutorialspoint.com";
+   const char ch = '.';
+   char *ret;
+
+   ret = ft_strchr(str, ch);
+
+   printf("String after |%c| is - |%s|\n", ch, ret);
+   
+   return(0);
+}
+*/
+//int main()
+// {
+// 	char *str = "123hel123lo123";
+// 	printf("the size of '%s' is: %zu\n",str, ft_strlen(str));
+// 	return 0;
+// }
+
+/*
+void dump5(char *str)
+{
+    char *p = str;
+    for (int n = 0; n < 5; ++n)
+    {
+        printf("%2.2x ", *p);
+        ++p;
+    }
+
+    printf("\t");
+
+    p = str;
+    for (int n = 0; n < 5; ++n)
+    {
+        printf("%c", *p ? *p : ' ');
+        ++p;
+    }
+
+    printf("\n", str);
 }
 */

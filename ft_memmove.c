@@ -1,20 +1,13 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/31 10:08:56 by aessadik          #+#    #+#             */
-/*   Updated: 2023/10/31 13:43:43 by aessadik         ###   ########.fr       */
+/*   Created: 2023/10/31 10:25:27 by aessadik          #+#    #+#             */
+/*   Updated: 2023/10/31 11:32:06 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int ft_isalpha(int c)
-{
-    if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-        return (c);
-    return (0);
-}
+ void *ft_memmove(void *dst, const void *src, size_t len);
