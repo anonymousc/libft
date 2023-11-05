@@ -6,7 +6,7 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 10:09:26 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/04 17:10:26 by aessadik         ###   ########.fr       */
+/*   Updated: 2023/11/05 21:53:56 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,4 @@ void *ft_memset(void *s, int c, size_t n)
     i++;
   }
   return(str);
-}
-int main()
-{
-  char s[] = "adam";
-  ft_memset(s,'$',2);
-  printf("%s\n",s);
 }

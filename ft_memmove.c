@@ -6,8 +6,10 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 10:25:27 by aessadik          #+#    #+#             */
-/*   Updated: 2023/10/31 11:32:06 by aessadik         ###   ########.fr       */
+/*   Updated: 2023/11/05 22:04:29 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
- void *ft_memmove(void *dst, const void *src, size_t len);
+ void *ft_memmove(void *dst, const void *src, size_t len)
+ {
+ }
