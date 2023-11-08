@@ -6,7 +6,7 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 10:09:02 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/03 02:42:08 by aessadik         ###   ########.fr       */
+/*   Updated: 2023/11/06 04:28:51 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 int ft_isascii(int c)
 {
     if (c >= 0 && c <= 127)
-        return(c);
+        return(1);
     return(0);
 }

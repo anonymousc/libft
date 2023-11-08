@@ -6,7 +6,7 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 10:09:34 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/04 00:23:04 by aessadik         ###   ########.fr       */
+/*   Updated: 2023/11/06 05:05:25 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@
 #include <unistd.h>
 
 
-char    *ft_strlcpy(char *dest, const char *src, size_t dstsize);
-char    *ft_strlcat(char *dest, const char *src, size_t dstsize);
+size_t  ft_strlcpy(char *dest, const char *src, size_t dstsize);
+size_t  ft_strlcat(char *dest, const char *src, size_t dstsize);
 char    *ft_strnstr(const char *haystack, const char *needle, size_t n);
 char    *ft_strchr(const char *s, int c);
 char    *ft_strrchr(const char *s, int c);
@@ -55,6 +55,7 @@ void    ft_striteri(char *s, void (*f)(unsigned int, char*));
 void    ft_putchar_fd(char c, int fd);
 void    ft_putstr_fd(char *s, int fd);
 void    ft_putnbr_fd(int n, int fd);
+void    ft_putendl_fd(char *s,int fd);
 
 void dump5(char *str);
 #endif

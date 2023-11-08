@@ -6,22 +6,31 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 10:09:45 by aessadik          #+#    #+#             */
-/*   Updated: 2023/10/31 15:59:17 by aessadik         ###   ########.fr       */
+/*   Updated: 2023/11/08 00:34:33 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strlcpy(char *dest, const char *src, size_t dstsize)
+size_t	ft_strlcpy(char *dest,const char *src, size_t size)
 {
-    int i;
+    size_t srcs;
+    size_t i;
 
-    i = 0;
-    while(src[i] != '\0')
+    if (!(dest && src))
     {
-        dest[i] = src[i];
-        i++;
+		return (0);
     }
-    dest[i] = '\0';
-    return(dest);
+    srcs = ft_strlen(src);
+    i = 0;
+    if (size != 0)
+    {
+        while(src[i] && i < (size - 1))
+        {
+            dest[i] = src[i];
+            i++;
+        }
+        dest[i] = '\0';
+    }
+    return(srcs);
 }
