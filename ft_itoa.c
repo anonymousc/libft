@@ -6,12 +6,12 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 16:33:52 by aessadik          #+#    #+#             */
-/*   Updated: 2023/10/31 16:34:24 by aessadik         ###   ########.fr       */
+/*   Updated: 2023/11/12 20:36:21 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 }

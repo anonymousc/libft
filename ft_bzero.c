@@ -6,15 +6,15 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 10:25:19 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/06 03:55:11 by aessadik         ###   ########.fr       */
+/*   Updated: 2023/11/12 20:21:31 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-    if (!s)
-        return ;
-    ft_memset(s,0,n);
+	if (!s)
+		return ;
+	ft_memset(s, 0, n);
 }

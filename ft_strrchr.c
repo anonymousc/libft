@@ -6,37 +6,22 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 10:25:40 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/06 05:08:17 by aessadik         ###   ########.fr       */
+/*   Updated: 2023/11/14 00:54:18 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char *ft_putstr(char *s)
+char	*ft_strrchr(const char *s, int c)
 {
-    if(!s)
-    {
-        return(0);
-    }
-    while(*s != '\0')
-    {
-        s++;
-    }
-    return (s);
-}
+	size_t	i;
 
-char *ft_strrchr(const char *s, int c)
-{
-    char *str;
-
-    str = ft_putstr((char *)s);
-    if(!(s && ft_isascii(c)))
-    {
-        return (0);
-    }
-    while(*str && *str != c)
-    {
-        str--;
-    }
-    return (str);
+	i = ft_strlen(s);
+	while (i >= 0)
+	{
+		if (s[i] == (char)c)
+			return ((char*)s + i);
+		i--;
+	}
+	return (NULL);
 }

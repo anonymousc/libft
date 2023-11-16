@@ -6,20 +6,20 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 10:09:08 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/03 16:47:04 by aessadik         ###   ########.fr       */
+/*   Updated: 2023/11/12 20:35:50 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
-    size_t i;
+	size_t	i;
 
-    i = 0;
-    if(!s)
-	    return (0);
-    while (s[i])
-        i++;
-    return (i);
+	i = 0;
+	if (!s)
+		return (0);
+	while (s[i])
+		i++;
+	return (i);
 }

@@ -6,11 +6,12 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 16:28:10 by aessadik          #+#    #+#             */
-/*   Updated: 2023/10/31 16:31:45 by aessadik         ###   ########.fr       */
+/*   Updated: 2023/11/12 20:25:46 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_strtrim(char const *s1, char const *set)
-{}
+char	*ft_strtrim(char const *s1, char const *set)
+{
+}
