@@ -8,20 +8,20 @@ SRCS = ft_atoi.c ft_isprint.c ft_putchar_fd.c  ft_putendl_fd.c   ft_strrchr.c ft
 	  ft_memset.c  ft_strnstr.c ft_calloc.c ft_strjoin.c ft_striteri.c ft_strmapi.c #ft_itoa.c ft_memmove.c ft_substr.c  ft_split.c ft_strtrim.c 
 
 CFLAGS = -Wall -Wextra -Werror -c
-
+	
 OBJS = $(SRCS:.c=.o)
+
 all : $(NAME)
 
 $(NAME) : $(OBJS)
-	ar -rc $(NAME) $(OBJS)
-
-#$(OBJS) : $(SRCS)
-#$(CC) $(CFLAGS) -c $(SRCS)
-
+	@ar -rc $(NAME) $(OBJS)
+	@echo compiling and archiving is done
 clean : 
-		rm -rf $(OBJS)
+		@rm -rf $(OBJS)
+		@echo removing .o files
 
 fclean : clean
-		rm -rf $(NAME)
+		@rm -rf $(NAME)
+		@echo removing .a file
 
 re : fclean clean all

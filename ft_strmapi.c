@@ -6,7 +6,7 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 16:35:05 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/16 01:02:05 by aessadik         ###   ########.fr       */
+/*   Updated: 2023/11/17 05:48:10 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	s1[i] = '\0';
 	return (s1);
 }
-
-int	main(void)
+int main()
 {
-	printf("%s\n", ft_strmapi("hello", NULL));
+	printf("%s",ft_strmapi("adam",f));
 }
