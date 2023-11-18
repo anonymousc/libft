@@ -6,7 +6,7 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 10:09:17 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/16 01:26:45 by aessadik         ###   ########.fr       */
+/*   Updated: 2023/11/19 00:41:22 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t n)
 		{
 			if (needle[j + 1] == '\0')
 				return ((char *)&haystack[i]);
-				
 			j++;
 		}
 		j = 0;
