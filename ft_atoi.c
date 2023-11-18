@@ -6,7 +6,7 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 10:25:16 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/12 20:18:04 by aessadik         ###   ########.fr       */
+/*   Updated: 2023/11/18 23:40:08 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_atoi(const char *str)
 {
 	int	i;
-	int	res;
+	long long	res;
 	int	s;
 
 	i = 0;
@@ -37,5 +37,7 @@ int	ft_atoi(const char *str)
 		res += str[i] - '0';
 		i++;
 	}
+    if(res > 4294967295)
+		return (-1);
 	return (res * s);
 }

@@ -6,12 +6,12 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 16:14:19 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/12 20:21:48 by aessadik         ###   ########.fr       */
+/*   Updated: 2023/11/17 23:11:08 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+#include <limits.h>
 void	*ft_calloc(size_t count, size_t size)
 {
 	void	*s;
