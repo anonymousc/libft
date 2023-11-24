@@ -6,7 +6,7 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 10:25:16 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/19 00:54:06 by aessadik         ###   ########.fr       */
+/*   Updated: 2023/11/23 19:06:14 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	ft_atoi(const char *str)
 	{
 		if (str[i] == '-')
 			s *= -1;
-			i++;
+		i++;
 	}
 	while (str[i] && (str[i] >= '0' && str[i] <= '9'))
 	{
@@ -35,7 +35,7 @@ int	ft_atoi(const char *str)
 		res += str[i] - '0';
 		i++;
 	}
-	if (res > 4294967295)
+	if (res > 9223372036854775807)
 		return (-1);
 	return (res * s);
 }

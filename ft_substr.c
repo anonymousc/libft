@@ -6,7 +6,7 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 16:22:55 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/19 00:44:41 by aessadik         ###   ########.fr       */
+/*   Updated: 2023/11/23 20:52:42 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*s1;
 	size_t	l;
 
-	if (s == NULL)
+	if (!s)
 		return (NULL);
 	l = ft_strlen(s);
 	if (start >= ft_strlen(s))
