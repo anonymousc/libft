@@ -6,7 +6,7 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 16:33:52 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/28 04:59:58 by aessadik         ###   ########.fr       */
+/*   Updated: 2023/11/29 23:19:35 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,10 +71,4 @@ char	*ft_itoa(int n)
 	else if (n < 0)
 		return (negative(n, digit_count));
 	return (NULL);
-}
-int main()
-{
-	int  s = -2147483648  ; 
-	
-	printf("%s",ft_itoa(s));
 }

@@ -6,7 +6,7 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 10:09:17 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/29 06:07:14 by aessadik         ###   ########.fr       */
+/*   Updated: 2023/11/29 08:58:11 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t n)
 	}
 	return (NULL);
 }
-int main()
-{
-		//char dest[5] = "0123";
-	char src[] = "hello world";
-	printf("%s", strnstr(NULL, src, 0));
-}
-FILE

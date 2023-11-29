@@ -6,7 +6,7 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 10:09:26 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/28 06:21:15 by aessadik         ###   ########.fr       */
+/*   Updated: 2023/11/29 23:19:25 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,4 @@ void	*ft_memset(void *s, int c, size_t n)
 		i++;
 	}
 	return (str);
-}
-int main ()
-{
-	ft_memset(NULL,0,0);
 }
