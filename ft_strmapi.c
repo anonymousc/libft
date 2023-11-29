@@ -6,7 +6,7 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 16:35:05 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/18 23:27:12 by aessadik         ###   ########.fr       */
+/*   Updated: 2023/11/25 03:50:40 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,10 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	int		i;
 
 	i = 0;
+	if (!s || !f)
+		return (NULL);
 	s1 = (char *)malloc(sizeof(char) * ft_strlen(s) + 1);
-	if (!s1 || !f)
+	if (!s1)
 		return (NULL);
 	while (s[i])
 	{
@@ -29,7 +31,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	s1[i] = '\0';
 	return (s1);
 }
-// int main()
-// {
-// 	printf("%s",ft_strmapi("adam",f));
-// }

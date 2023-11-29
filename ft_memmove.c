@@ -6,7 +6,7 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 10:25:27 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/24 21:21:13 by aessadik         ###   ########.fr       */
+/*   Updated: 2023/11/28 06:20:37 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,15 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 
 	d = (char *)dst;
 	s = (char *)src;
+	if (src == dst)
+		return (dst);
 	if (!len)
 		return (dst);
 	else if (d <= s)
 		return (ft_memcpy(dst, src, len));
 	else
 	{
+		printf("overlap");
 		d += len;
 		s += len;
 		while (len--)
@@ -32,9 +35,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
-int main()
+int main ()
 {
-	char s[] = "asdasd";
-	char d[] = "sadasd";
-	ft_memmove(s,d,7)
-} 
+	ft_memset(NULL,NULL,0);
+}

@@ -6,7 +6,7 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 16:14:12 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/12 20:23:41 by aessadik         ###   ########.fr       */
+/*   Updated: 2023/11/28 05:06:00 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ char	*ft_strdup(const char *s1)
 	size_t	i;
 
 	i = 0;
-	if (!(s1))
-		return (NULL);
 	s = (char *)malloc(ft_strlen(s1) + 1);
 	if (!s)
 		return (NULL);
@@ -29,5 +27,6 @@ char	*ft_strdup(const char *s1)
 		i++;
 	}
 	*(s + i) = '\0';
+	
 	return (s);
 }

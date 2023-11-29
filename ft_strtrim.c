@@ -6,7 +6,7 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 16:28:10 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/19 00:51:12 by aessadik         ###   ########.fr       */
+/*   Updated: 2023/11/28 04:49:17 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,12 @@ char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
 	size_t	end;
-	char	*s2;
+	char 	*s2;
 
-	if (s1 == NULL)
+	if (!s1 || !set)
 		return (NULL);
-	if (s1[0] == '\0')
+	if (*s1 == '\0')
 		return (ft_strdup(""));
-	if (s1 == 0 || set == 0)
-	{
-		return (NULL);
-	}
 	start = 0;
 	end = ft_strlen(s1);
 	while (s1[start] && ft_strchr(set, s1[start]))
