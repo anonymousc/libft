@@ -9,7 +9,6 @@
 /*   Updated: 2023/11/28 05:01:07 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 
 static size_t	ft_countword(char const *s, char c)
