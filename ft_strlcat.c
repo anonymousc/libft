@@ -6,7 +6,7 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 19:43:10 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/29 23:18:35 by aessadik         ###   ########.fr       */
+/*   Updated: 2024/08/19 14:55:17 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 
 	i = 0;
 	j = 0;
-	while (i < dstsize && dst[i])
-	{
+	if (dstsize != ft_strlen(src))
+		return (i + ft_strlen(src));
+	while (src || (dst && i < dstsize && dst[i]))
 		i++;
-	}
-	while ((i + j + 1) < dstsize && src[j])
+	while (src || (dst && (i + j + 1) < dstsize && src[j]))
 	{
 		dst[i + j] = src[j];
 		j++;

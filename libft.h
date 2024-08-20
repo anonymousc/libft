@@ -6,7 +6,7 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 10:09:34 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/29 06:01:45 by aessadik         ###   ########.fr       */
+/*   Updated: 2024/08/19 15:09:13 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,9 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <string.h>
+
+# define SIZE_MAX	4294967295
+# define PROTECTION	1844674407370955169
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t dstsize);
 size_t	ft_strlcat(char *dest, const char *src, size_t dstsize);
@@ -34,6 +37,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 size_t	ft_strlen(const char *s);
+int		ft_isspace(int c);
 int		ft_isalpha(int c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);

@@ -6,7 +6,7 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 10:09:26 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/29 23:19:25 by aessadik         ###   ########.fr       */
+/*   Updated: 2024/08/19 15:08:27 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memset(void *s, int c, size_t n)
 
 	i = 0;
 	str = (unsigned char *)s;
-	while (i < n)
+	while (s && i < n)
 	{
 		*(str + i) = c;
 		i++;

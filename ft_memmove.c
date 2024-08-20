@@ -6,7 +6,7 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 10:25:27 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/29 23:18:49 by aessadik         ###   ########.fr       */
+/*   Updated: 2024/08/19 14:47:50 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,11 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	if (!len)
 		return (dst);
 	else if (d <= s)
+	{
 		return (ft_memcpy(dst, src, len));
+	}
 	else
 	{
-		//printf("overlap");
 		d += len;
 		s += len;
 		while (len--)

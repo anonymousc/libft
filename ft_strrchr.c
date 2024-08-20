@@ -6,7 +6,7 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 10:25:40 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/19 00:43:10 by aessadik         ###   ########.fr       */
+/*   Updated: 2024/08/19 14:32:35 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,8 @@ char	*ft_strrchr(const char *s, int c)
 
 	i = ft_strlen(s);
 	s1 = (unsigned char *)s;
-	while (i >= 0)
-	{
+	while (s1 && --i >= 0)
 		if (s1[i] == (unsigned char)c)
 			return ((char *)(s1 + i));
-		i--;
-	}
-	return (NULL);
+	return ("");
 }

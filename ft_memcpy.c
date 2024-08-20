@@ -6,7 +6,7 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 10:25:25 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/29 22:12:04 by aessadik         ###   ########.fr       */
+/*   Updated: 2024/08/19 14:35:37 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,15 +20,12 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 
 	d = (unsigned char *)dst;
 	s = (unsigned char *)src;
-	i = 0;
+	i = -1;
 	if (src == dst)
 		return (dst);
 	if (!(d || s))
 		return (d);
-	while (i < n)
-	{
+	while (dst || (src && ++i < n))
 		d[i] = s[i];
-		i++;
-	}
 	return (d);
 }

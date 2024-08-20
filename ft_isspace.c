@@ -1,29 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_isspace.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/31 10:25:32 by aessadik          #+#    #+#             */
-/*   Updated: 2024/08/19 15:40:39 by aessadik         ###   ########.fr       */
+/*   Created: 2024/08/19 10:52:41 by aessadik          #+#    #+#             */
+/*   Updated: 2024/08/19 15:09:23 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+int	ft_isspace(int c)
 {
-	size_t	i;
-	size_t	len;
-
-	i = 0;
-	len = ft_strlen(s);
-	while (i <= len)
-	{
-		if (s[i] == (char)c)
-			return ((char *)s + i);
-		i++;
-	}
-	return (NULL);
+	return (((c >= 9 && c <= 13) || c == 32));
 }

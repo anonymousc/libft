@@ -6,7 +6,7 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 10:25:20 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/11 20:54:16 by aessadik         ###   ########.fr       */
+/*   Updated: 2024/08/19 14:20:51 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 	i = 0;
 	b = (unsigned char *)s;
-	while (i < n)
+	while (s && i < n)
 	{
 		if (b[i] == (unsigned char)c)
 			return ((void *)(b + i));

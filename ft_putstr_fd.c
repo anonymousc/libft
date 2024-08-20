@@ -6,7 +6,7 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 16:39:21 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/19 00:45:48 by aessadik         ###   ########.fr       */
+/*   Updated: 2024/08/19 14:48:18 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,7 @@ void	ft_putstr_fd(char *s, int fd)
 	int	i;
 
 	i = 0;
-	if (s == NULL)
-		return ;
-	while (s[i])
+	while (s && s[i])
 	{
 		ft_putchar_fd(s[i], fd);
 		i++;

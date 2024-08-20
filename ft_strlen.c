@@ -6,7 +6,7 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 10:09:08 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/24 20:33:20 by aessadik         ###   ########.fr       */
+/*   Updated: 2024/08/19 13:36:39 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ size_t	ft_strlen(const char *s)
 	size_t	i;
 
 	i = 0;
-	while (s[i])
+	while (s && s[i])
 		i++;
 	return (i);
 }

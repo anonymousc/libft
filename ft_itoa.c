@@ -6,7 +6,7 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 16:33:52 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/29 23:19:35 by aessadik         ###   ########.fr       */
+/*   Updated: 2024/08/19 14:20:57 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ char	*positive(long n, int d)
 char	*ft_itoa(int n)
 {
 	int	temp;
-	int		digit_count;
+	int	digit_count;
 
 	temp = n;
 	digit_count = 0;

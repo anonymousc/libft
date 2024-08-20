@@ -6,7 +6,7 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 10:25:19 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/24 20:35:15 by aessadik         ###   ########.fr       */
+/*   Updated: 2024/08/19 14:18:38 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,6 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	ft_memset(s, 0, n);
+	if (n <= SIZE_MAX)
+		ft_memset(s, 0, n);
 }

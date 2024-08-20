@@ -6,7 +6,7 @@
 /*   By: aessadik <aessadik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 10:09:17 by aessadik          #+#    #+#             */
-/*   Updated: 2023/11/29 08:58:11 by aessadik         ###   ########.fr       */
+/*   Updated: 2024/08/19 14:58:02 by aessadik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t n)
 	{
 		return ((char *)&haystack[i]);
 	}
-	while (haystack[i])
+	while (haystack && haystack[i])
 	{
 		while (haystack[i + j] == needle[j] && i + j < n)
 		{
