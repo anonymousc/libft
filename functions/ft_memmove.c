@@ -24,9 +24,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	if (!len)
 		return (dst);
 	else if (d <= s)
-	{
 		return (ft_memcpy(dst, src, len));
-	}
 	else
 	{
 		d += len;
